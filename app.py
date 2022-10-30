@@ -16,10 +16,6 @@ def get_my_ip():
 
 @app.route("/test")
 def test():
-    from dotenv import load_dotenv
-
-    load_dotenv()
-    import os
     import MySQLdb
 
     connection = MySQLdb.connect(
