@@ -16,9 +16,9 @@ def get_my_ip():
 
 @app.route("/test")
 def test():
-    import MySQLdb
+    import pymysql
 
-    connection = MySQLdb.connect(
+    connection = pymysql.connect(
         host=os.getenv("HOST"),
         user=os.getenv("USERNAME"),
         passwd=os.getenv("PASSWORD"),
